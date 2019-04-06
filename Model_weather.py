@@ -12,6 +12,3 @@ class Model(object):
         request_url = url + 'appid=' + self.api_key + '&q=' + cityName + '&units=metric'
         response = requests.request(url = request_url,method='GET')
         return response.json()
-
-obj = Model()
-res = obj.requestSetup('Patna')
