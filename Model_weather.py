@@ -4,7 +4,7 @@ url = 'http://api.openweathermap.org/data/2.5/weather?'
 class Model(object):
 
     def __init__(self):
-        self.api_key = '280181c2614d065125d9b884fb43eedb'
+        self.api_key = 'Write your API key'
 
     def requestSetup(self,cityName):
 
@@ -15,4 +15,3 @@ class Model(object):
 
 obj = Model()
 res = obj.requestSetup('Patna')
-print((json.dumps(res,indent = 4)))
